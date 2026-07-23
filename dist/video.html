@@ -1,24 +1,41 @@
-<link rel="stylesheet" href="C:/Users/Анна/Documents/GitHub/font-awesome/css/font-awesome.min.css">
-<div id="player" style="width: 800px; height: 600px;">  
-  
-  <div class="js-video-container" style="width: 100%; height: 100%"></div>
-  
-  <div style="background-color:black; height: 20px; width: 800px;">
-    <button class="js-play-button" style="border:none; cursor:pointer; color:white; background:transparent;"> 
-      <i class="fa fa-play" aria-hidden="true"></i>
-    </button>
-    <button class="js-pause-button" style="border:none; cursor:pointer; color:white; background:transparent;"> 
-      <i class="fa fa-pause" aria-hidden="true"></i>
-    </button>
-  </div>
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    button {
+      border: none;
+      cursor: pointer;
+      color: white;
+      background: transparent;
+    }
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<body>
+  <link rel="stylesheet" href="C:/Users/Анна/Documents/GitHub/font-awesome/css/font-awesome.min.css">
+  <div id="player" style="width: 800px; height: 600px;"> 
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
-  <script src="player.js"></script>
+    <div class="js-video-container" style="width: 100%; height: 100%"></div>
 
-<script type="text/javascript">
-  createPlayer({elementId: 'player'});
-</script>
+    <div style="background-color:black; height: 20px; width: 800px;">
+      <button class="js-play-button"> 
+        <i class="fa fa-play" aria-hidden="true"></i>
+      </button>
+      <button class="js-pause-button"> 
+        <i class="fa fa-pause" aria-hidden="true"></i>
+      </button>
+    </div>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
+    <script src="player.js"></script>
+
+    <script type="text/javascript">
+    createPlayer({elementId: 'player'});
+  </script>
+</body>
+</html>
 
 
