@@ -11,7 +11,6 @@
       color: white;
       background: transparent;
       margin: 2px;
-      
     }
 
     .shadow {
@@ -33,6 +32,15 @@
     .player-button i {
       padding: 2px;
     }
+
+    .black-line {
+      display: flex;
+    }
+
+    .spacer {
+      flex-grow: 1;
+    }
+
   </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -56,6 +64,10 @@
       </button>
       <button class="player-button js-volume-button">
         <i class="fa fa-volume-off" aria-hidden="true"></i>
+      </button>
+      <div class="spacer"></div>
+      <button class="player-button js-fullscreen-button">
+        <i class="fa fa-expand" aria-hidden="true"></i>
       </button>
     </div>
 
